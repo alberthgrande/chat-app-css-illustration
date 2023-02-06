@@ -1,0 +1,135 @@
+@import url(reset.css);
+
+:root {
+  /* (sub-heading at the top of the app UI) */
+  --clr-primary-Pale-Violet: hsl(276, 100%, 81%);
+  /* (chat on the left) */
+  --clr-primary-Moderate-Violet: hsl(276, 55%, 52%);
+  /* (chat on the right) */
+  --clr-primary-Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  /* (placeholder text) */
+  --clr-primary-Grayish-Blue: hsl(206, 6%, 79%);
+  /* (main heading) */
+  --clr-primary-Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  /* (paragraph) */
+  --clr-primary-Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+  --clr-gradients-Light-Magenta: hsl(293, 100%, 63%);
+  --clr-gradients-Light-Violet: hsl(264, 100%, 61%);
+
+  --clr-secondary-White: hsl(0, 0%, 100%);
+  /* (app background) */
+  --clr-secondary-Light-Grayish-Violet: hsl(270, 20%, 96%);
+  /* (submit button background) */
+  --clr-secondary-Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  /* (radio button outline) */
+  --clr-secondary-Very-Light-Magenta: hsl(289, 100%, 72%);
+
+  --fs-typography: 1rem;
+  --ff-font: "Rubik", sans-serif;
+}
+
+body {
+  font-family: var(--ff-font);
+}
+
+.bg-top__color {
+  position: absolute;
+  width: 50%;
+  height: 50vh;
+  background: linear-gradient(
+    var(--clr-gradients-Light-Violet) 11.2%,
+    var(--clr-gradients-Light-Magenta) 91.1%
+  );
+  border-radius: 0px 0px 1000px 0px;
+  z-index: -1;
+}
+
+.bg-bottom__color {
+  position: absolute;
+  width: 50%;
+  height: 50vh;
+  bottom: 0;
+  right: 0;
+  background-color: var(--clr-secondary-Light-Grayish-Violet);
+  border-radius: 1000px 0px 0px 0px;
+  z-index: -1;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.mobile__container {
+  background-color: var(--clr-secondary-White);
+  padding: 1rem;
+  max-width: 300px;
+  margin-top: 5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1.5rem;
+}
+.app__container {
+  background-color: var(--clr-secondary-Light-Grayish-Violet);
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* app__header */
+.app__header {
+  background: linear-gradient(
+    60deg,
+    var(--clr-gradients-Light-Violet) 11.2%,
+    var(--clr-gradients-Light-Magenta) 91.1%
+  );
+  position: relative;
+}
+.app__header-white {
+  position: absolute;
+  left: 3.7rem;
+  top: -0.5rem;
+  height: 30px;
+  width: 150px;
+  border-radius: 1rem;
+  background-color: var(--clr-secondary-White);
+}
+.app__header-flex,
+.app__header-user {
+  display: flex;
+}
+.app__header-flex {
+  justify-content: space-between;
+  color: var(--clr-secondary-White);
+  padding: 2rem 10px 0.5rem 10px;
+}
+.app__header-user {
+  align-items: center;
+  gap: 0.5rem;
+}
+.app__header-user img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-secondary-White);
+}
+.app__user-info {
+  font-size: 11px;
+}
+
+/* dog chat image */
+.chat__image {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

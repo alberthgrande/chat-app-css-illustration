@@ -56,78 +56,9 @@ body {
   z-index: -1;
 }
 
-main {
-  display: grid;
-  place-content: center;
-}
-
-.mobile__container {
-  background-color: var(--clr-secondary-White);
-  padding: 1rem;
-  max-width: 300px;
-  margin-top: 5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 1.5rem;
-}
-.app__container {
-  background-color: var(--clr-secondary-Light-Grayish-Violet);
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-/* app__header */
-.app__header {
-  background: linear-gradient(
-    60deg,
-    var(--clr-gradients-Light-Violet) 11.2%,
-    var(--clr-gradients-Light-Magenta) 91.1%
-  );
-  position: relative;
-}
-.app__header-white {
-  position: absolute;
-  left: 3.7rem;
-  top: -0.5rem;
-  height: 30px;
-  width: 150px;
-  border-radius: 1rem;
-  background-color: var(--clr-secondary-White);
-}
-.app__header-flex,
-.app__header-user {
-  display: flex;
-}
-.app__header-flex {
-  justify-content: space-between;
-  color: var(--clr-secondary-White);
-  padding: 2rem 10px 0.5rem 10px;
-}
-.app__header-user {
-  align-items: center;
-  gap: 0.5rem;
-}
-.app__header-user img {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  border: 1px solid var(--clr-secondary-White);
-}
-.app__user-info {
-  font-size: 11px;
-}
-
-/* dog chat image */
-.chat__image {
-  display: flex;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-}
-
 /* footer */
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
 }
 .attribution a {
